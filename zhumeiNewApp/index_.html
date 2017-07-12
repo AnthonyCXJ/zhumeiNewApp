@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="style/weui.css">    <!--  weui -->
+    <link rel="stylesheet" href="style/jquery-weui.css">    <!--  jquery-weui -->
+    <link rel="stylesheet" href="style/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="style/base.css">    <!--  base -->
+    <link rel="stylesheet" href="style/iconfont.css">
+    <link rel="stylesheet" href="style/style.css">    <!-- main style -->
+    <script src="lib/plugins/fontSize.js"></script>   <!--  rem字体 -->
+</head>
+<body ontouchstart>
+    <!-- 下拉刷新 -->
+    <div class="weui-pull-to-refresh__layer f15">
+        <div class='weui-pull-to-refresh__arrow'></div>
+        <div class='weui-pull-to-refresh__preloader'></div>
+        <div class="down">下拉o(*≧▽≦)ツ</div>
+        <div class="up">释放(●′ω`●)</div>
+        <div class="refresh">正在( > c < ) </div>
+    </div>
+
+    <!-- 头部 -->
+    <header class="j-header">
+        <a href="地区.html" class="place pos-left-0 pl10 pr10 f15 white">
+            上海 <i class="iconfont icon-down"></i>
+        </a>
+        <a href="消息.html" class="news pos-right-0 pl10 pr10 white">
+            <i class="iconfont icon-news f20"></i>
+        </a>
+        <a href="search.html" class="search">
+            <label>
+                <i class="iconfont icon-search f15 gray"></i>
+                <input class="f12" type="text" readonly placeholder="搜索项目/商品/专家">
+            </label>
+        </a>
+    </header>
+    <!-- footer -->
+    <footer class="flex-center border-href-t">
+        <a href="#" class="flex-items active tc">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-home-active"></use>
+            </svg>
+            <span class="block f12">助美</span>
+        </a>
+        <a href="#" class="flex-items tc">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fx-beauty"></use>
+            </svg>
+            <span class="block f12">放心美</span>
+        </a>
+        <a href="#" class="flex-items tc">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-quanzi"></use>
+            </svg>
+            <span class="block f12">社区</span>
+        </a>
+        <a href="#" class="flex-items tc">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fx-shop"></use>
+            </svg>
+            <span class="block f12">安心购</span>
+        </a>
+        <a href="#" class="flex-items tc">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-mine"></use>
+            </svg>
+            <span class="block f12">我的</span>
+        </a>
+    </footer>
+
+    <!-- main -->
+    <div class="main">
+        <!-- banner -->
+        <div class="swiper-container j-banner banner">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide"><img src="images/banner.png" alt=""></a>
+                <a class="swiper-slide"><img src="images/banner.png" alt=""></a>
+                <a class="swiper-slide"><img src="images/banner.png" alt=""></a>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination banner-swiper-pagination"></div>
+        </div>
+
+        <!-- nav -->
+        <div class="flex-center flex-wrap nav-sider">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-eye"></use>
+                </svg>
+                <span class="block">眼部</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-nose"></use>
+                </svg>
+                <span class="block">鼻部</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-face"></use>
+                </svg>
+                <span class="block">面部轮廓</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-mouth"></use>
+                </svg>
+                <span class="block">口唇</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-bra"></use>
+                </svg>
+                <span class="block">胸部</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tooth"></use>
+                </svg>
+                <span class="block">口腔</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-hair"></use>
+                </svg>
+                <span class="block">毛发种植</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-body"></use>
+                </svg>
+                <span class="block">美体塑形</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-syringe"></use>
+                </svg>
+                <span class="block">嫩白美肤</span>
+            </a>
+            <a href="javascript:" class="j-navbar-more" data-click="on">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-more"></use>
+                </svg>
+                <span class="block">更多</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-water"></use>
+                </svg>
+                <span class="block">抗衰老</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ear"></use>
+                </svg>
+                <span class="block">耳部</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-simi"></use>
+                </svg>
+                <span class="block">私密整形</span>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-other"></use>
+                </svg>
+                <span class="block">其他整形</span>
+            </a>
+        </div>
+
+        <!-- 头条 -->
+        <div class="top-line border-href-t p10 relative">
+            <div class="swiper-container j-top-line border-href-l">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide ellipsis"><span>活动</span>提高颜值，赢未来，长沙雅美暑假大放送</a>
+                    <a class="swiper-slide ellipsis"><span>活动</span>提高颜值，赢未来，长沙雅美暑假大放送</a>
+                    <a class="swiper-slide ellipsis"><span>活动</span>提高颜值，赢未来，长沙雅美暑假大放送</a>
+                    <a class="swiper-slide ellipsis"><span>活动</span>提高颜值，赢未来，长沙雅美暑假大放送</a>
+                    <a class="swiper-slide ellipsis"><span>活动</span>提高颜值，赢未来，长沙雅美暑假大放送</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 限时优惠 -->
+        <div class="lay-preferential-wrap white-bg">
+            <div class="swiper-container lay-preferential  j-lay-preferential">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide relative clearfix">
+                        <span class="type-img"><img src="images/shop_begin.png" alt=""></span>
+                        <div class="left fl">
+                            <h2>限时特惠</h2>
+                            <h3>距离结束还有</h3>
+                            <ul class="countdown j-countdown01 clearfix">
+                                <li class="j-time"><span class="days">00</span></li>
+                                <li class="seperator">天</li>
+                                <li class="j-time"><span class="hours">00</span></li>
+                                <li class="seperator">时</li>
+                                <li class="j-time"><span class="minutes">00</span></li>
+                                <li class="seperator">分</li>
+                            </ul>
+                            <p class="black f18">￥9692.0<del class="gray f13">￥12921.0</span></p>
+                        </div>
+                        <div class="right fr">
+                            <img src="images/count.png" alt="">
+                        </div>
+                    </a>
+                    <a class="swiper-slide relative clearfix">
+                        <span class="type-img"><img src="images/shopping.png" alt=""></span>
+                        <div class="left fl">
+                            <h2>限时特惠</h2>
+                            <h3>距离结束还有</h3>
+                            <ul class="countdown j-countdown02 clearfix">
+                                <li class="j-time"><span class="days">00</span></li>
+                                <li class="seperator">天</li>
+                                <li class="j-time"><span class="hours">00</span></li>
+                                <li class="seperator">时</li>
+                                <li class="j-time"><span class="minutes">00</span></li>
+                                <li class="seperator">分</li>
+                            </ul>
+                            <p class="black f18">￥9692.0<del class="gray f13">￥12921.0</span></p>
+                        </div>
+                        <div class="right fr">
+                            <img src="images/count.png" alt="">
+                        </div>
+                    </a>
+                    <a class="swiper-slide relative clearfix">
+                        <span class="type-img"><img src="images/shop_end.png" alt=""></span>
+                        <div class="left fl">
+                            <h2>限时特惠</h2>
+                            <h3>距离结束还有</h3>
+                            <ul class="countdown j-countdown03 clearfix">
+                                <li class="j-time"><span class="days">00</span></li>
+                                <li class="seperator">天</li>
+                                <li class="j-time"><span class="hours">00</span></li>
+                                <li class="seperator">时</li>
+                                <li class="j-time"><span class="minutes">00</span></li>
+                                <li class="seperator">分</li>
+                            </ul>
+                            <p class="black f18">￥9692.0<del class="gray f13">￥12921.0</span></p>
+                        </div>
+                        <div class="right fr">
+                            <img src="images/count.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination preferential-pagination"></div>
+            </div>
+        </div>
+
+        <!-- 列表 -->
+        <div class="list-wrap j-all-list-wrap mt10">
+            <!-- 列表头部 -->
+            <div class="list-title border-href-b flex-center j-list-nav tc pl20 pr20 f17 white-bg relative">
+                <a href="javascript:" class="flex-items active">优选</a>
+                <a href="javascript:" class="flex-items">美购</a>
+                <a href="javascript:" class="flex-items">医生</a>
+                <a href="javascript:" class="flex-items">医院</a>
+            </div>
+            <!-- 内容区 -->
+            <div class="list-cont-wrap j-list-cont white-bg">
+                <!-- 优选 -->
+                <div class="list-cont pt10">
+                    <!-- 圆形nav -->
+                    <ul class="flex-center j-sub-list-nav radius-title ml10 mr10">
+                        <li class="flex-items active">美丽日记</li>
+                        <li class="flex-items">在线问答</li>
+                        <li class="flex-items">项目百科</li>
+                    </ul>
+
+                    <!-- 美丽日记 -->
+                    <div class="list-items-wrap">
+                        <ul class="pt10 j-beauty-list-infinite">
+                            <li class="border-b-10">
+                                <div class="items-top pl10 pr10 pb10 clearfix">
+                                    <span class="img"><img src="images/head.jpg" alt=""></span>
+                                    <div class="dec fl pt10">
+                                        <p class="f15">Anthony</p>
+                                        <p class="gray f12">2017-07-10</p>
+                                    </div>
+                                    <a href="#" class="fr red f15 pt20"><i class="iconfont icon-tag f12 pr5"></i>玻尿酸隆鼻</a>
+                                </div>
+                                <a class="items-mid block pl10 pr10">
+                                    <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                    <div class="img-contrast clearfix">
+                                        <span><b class="before">Before</b><img src="images/list_img02.png" alt=""></span>
+                                        <span><b class="after">After</b><img src="images/list_img02.png" alt=""></span>
+                                    </div>
+                                </a>
+                                <div class="items-bottom flex-center border-href-t tc f15 pl10 pr10 relative">
+                                    <a href="javascript:" class="flex-items pt10 pb10 gray">
+                                        <i class="iconfont icon-look v-2"></i>
+                                        浏览(289)
+                                    </a>
+                                    <a href="javascript:" class="flex-items pt10 pb10 gray">
+                                        <i class="iconfont icon-comment v-2"></i>
+                                        评论(289)
+                                    </a>
+                                    <a href="javascript:" class="flex-items pt10 pb10 gray">
+                                        <i class="iconfont icon-zan v-2"></i>
+                                        点赞(289)
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="border-b-10">
+                                <div class="items-top pl10 pr10 pb10 clearfix">
+                                    <span class="img"><img src="images/head.jpg" alt=""></span>
+                                    <div class="dec fl pt10">
+                                        <p class="f15">Anthony</p>
+                                        <p class="gray f12">2017-07-10</p>
+                                    </div>
+                                    <a href="#" class="fr red f15 pt20"><i class="iconfont icon-tag f12 pr5"></i>玻尿酸隆鼻</a>
+                                </div>
+                                <a class="items-mid block pl10 pr10">
+                                    <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                    <div class="img-contrast clearfix">
+                                        <span><b class="before">Before</b><img src="images/list_img02.png" alt=""></span>
+                                        <span><b class="after">After</b><img src="images/list_img02.png" alt=""></span>
+                                    </div>
+                                </a>
+                                <div class="items-bottom flex-center border-href-t tc f15 pl10 pr10 relative">
+                                    <a href="javascript:" class="flex-items pt10 pb10 gray">
+                                        <i class="iconfont icon-look v-2"></i>
+                                        浏览(289)
+                                    </a>
+                                    <a href="javascript:" class="flex-items pt10 pb10 gray">
+                                        <i class="iconfont icon-comment v-2"></i>
+                                        评论(289)
+                                    </a>
+                                    <a href="javascript:" class="flex-items pt10 pb10 gray">
+                                        <i class="iconfont icon-zan v-2"></i>
+                                        点赞(289)
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 滚动加载 -->
+                        <div class="weui-loadmore">
+                            <i class="weui-loading"></i>
+                            <span class="weui-loadmore__tips">正在加载</span>
+                        </div>
+                    </div>
+
+                    <!-- 在线问答 -->
+                    <div class="list-items-wrap none">
+                        <ul class="pt10">
+                            <li class="border-b-10">
+                                <div class="items-top pl10 pr10 pb10 clearfix">
+                                    <span class="img"><img src="images/head.jpg" alt=""></span>
+                                    <div class="dec fl pt20">
+                                        <p class="f15">Anthony</p>
+                                    </div>
+                                    <p class="gray f12 fr pt20">2017-07-10</p>
+                                </div>
+                                <a href="#" class="block">
+                                    <div class="items-mid pl10 pr10">
+                                        <h2 class="f17 black"></h2>
+                                        <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                    </div>
+                                    <div class="items-bottom f13 p10 clearfix">
+                                        <div class="tag pt2 fl ellipsis clearfix">
+                                            <span>毛发</span>
+                                            <span>口腔</span>
+                                            <span>牙齿种植</span>
+                                        </div>
+                                        <span class="fr pt3 gray">
+                                            <i class="iconfont icon-look v-2"></i>
+                                            浏览(289)
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="border-b-10">
+                                <div class="items-top pl10 pr10 pb10 clearfix">
+                                    <span class="img"><img src="images/head.jpg" alt=""></span>
+                                    <div class="dec fl pt20">
+                                        <p class="f15">Anthony</p>
+                                    </div>
+                                    <p class="gray f12 fr pt20">2017-07-10</p>
+                                </div>
+                                <a href="#" class="block">
+                                    <div class="items-mid pl10 pr10">
+                                        <h2 class="f17 black"></h2>
+                                        <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                    </div>
+                                    <div class="items-bottom f13 p10 clearfix">
+                                        <div class="tag pt2 fl ellipsis clearfix">
+                                            <span>毛发</span>
+                                            <span>口腔</span>
+                                            <span>牙齿种植</span>
+                                        </div>
+                                        <span class="fr pt3 gray">
+                                            <i class="iconfont icon-look v-2"></i>
+                                            浏览(289)
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 项目百科 -->
+                    <div class="list-items-wrap none">
+                        <ul class="pt10">
+                            <li class="relative border-href-b">
+                                <a href="#" class="block">
+                                    <div class="items-top baike-list pl10 pr10 clearfix">
+                                        <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                        <div class="dec">
+                                            <h2 class="f17 h1-black pt5 pb5 ellipsis">玻尿酸隆鼻有什么优势</h2>
+                                            <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom f13 p10 clearfix">
+                                        <div class="tag pt2 fl ellipsis clearfix">
+                                            <span>毛发</span>
+                                            <span>口腔</span>
+                                            <span>牙齿种植</span>
+                                        </div>
+                                        <span class="fr pt3 gray">
+                                            <i class="iconfont icon-look v-2"></i>
+                                            浏览(289)
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative border-href-b">
+                                <a href="#" class="block">
+                                    <div class="items-top baike-list pl10 pr10 clearfix">
+                                        <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                        <div class="dec">
+                                            <h2 class="f17 h1-black pt5 pb5 ellipsis">玻尿酸隆鼻有什么优势</h2>
+                                            <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom f13 p10 clearfix">
+                                        <div class="tag pt2 fl ellipsis clearfix">
+                                            <span>毛发</span>
+                                            <span>口腔</span>
+                                            <span>牙齿种植</span>
+                                        </div>
+                                        <span class="fr pt3 gray">
+                                            <i class="iconfont icon-look v-2"></i>
+                                            浏览(289)
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative border-href-b">
+                                <a href="#" class="block">
+                                    <div class="items-top baike-list pl10 pr10 clearfix">
+                                        <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                        <div class="dec">
+                                            <h2 class="f17 h1-black pt5 pb5 ellipsis">玻尿酸隆鼻有什么优势</h2>
+                                            <p class="intwoline f15">我想你是爱我的，我猜你也舍不得，但是怎么说总觉得，我们之间 留了太多空白格，也许你不是我的，爱你却又该割舍，分开或许是选择，但它也可能是我们的缘分</p>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom f13 p10 clearfix">
+                                        <div class="tag pt2 fl ellipsis clearfix">
+                                            <span>毛发</span>
+                                            <span>口腔</span>
+                                            <span>牙齿种植</span>
+                                        </div>
+                                        <span class="fr pt3 gray">
+                                            <i class="iconfont icon-look v-2"></i>
+                                            浏览(289)
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- 美购 -->
+                <div class="list-cont none">
+                    <div class="list-items-wrap">
+                        <ul>
+                            <li class="relative border-href-b">
+                                <a href="#" class="block pt10 pb10">
+                                    <div class="items-top meigou-list pl10 pr10 clearfix">
+                                        <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                        <div class="dec">
+                                            <h2 class="f17 h1-black lh25 intwoline">玻尿酸隆鼻有什么优势玻尿酸隆鼻有什么优势</h2>
+                                            <p class="f13 gray ellipsis">
+                                                <span>祛斑</span>
+                                                <span>激光祛斑</span>
+                                                <span>激光祛斑</span>
+                                                <span>激光祛斑</span>
+                                            </p>
+                                            <p>
+                                                <span class="red f18"><i class="iconfont icon-rmb f12"></i>1028.0</span>
+                                                <span class="f12 gray">150人已预定</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative border-href-b">
+                                <a href="#" class="block pt10 pb10">
+                                    <div class="items-top meigou-list pl10 pr10 clearfix">
+                                        <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                        <div class="dec">
+                                            <h2 class="f17 h1-black lh25 intwoline">玻尿酸隆鼻有什么优势玻尿酸隆鼻有什么优势</h2>
+                                            <p class="f13 gray ellipsis">
+                                                <span>祛斑</span>
+                                                <span>激光祛斑</span>
+                                                <span>激光祛斑</span>
+                                                <span>激光祛斑</span>
+                                            </p>
+                                            <p>
+                                                <span class="red f18"><i class="iconfont icon-rmb f12"></i>1028.0</span>
+                                                <span class="f12 gray">150人已预定</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 医生 -->
+                <div class="list-cont none">
+                    <ul>
+                        <li class="relative border-href-b">
+                            <a href="#" class="block pt10 pb10">
+                                <div class="items-top doc-list pl10 pr10 clearfix">
+                                    <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                    <div class="dec">
+                                        <div class="clearfix">
+                                            <span class="f17 pr5 h1-black">王会永</span>
+                                            <span class="f13 gray"> 院长</span>
+                                            <i class="iconfont icon-rz fr pt2 orange"></i>
+                                        </div>
+                                        <p class="f15">
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <span class="orange">5.0</span>
+                                        </p>
+                                        <p class="ellipsis gray f15">医院：上海喜美医疗美容</p>
+                                        <p class="ellipsis gray f15">擅长：眼部、鼻部、胸部、皮肤</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="items-bottom doc-list f15 pl10 pr10 clearfix">
+                                <span class="fl pt10 pb10">已有<b class="red">150</b>预定</span>
+                                <a href="javascript:" class="pt10 pb10 gray fr">
+                                    <i class="iconfont icon-comment v-2"></i>
+                                    评论(289)
+                                </a>
+                            </div>
+                        </li>
+                        <li class="relative border-href-b">
+                            <a href="#" class="block pt10 pb10">
+                                <div class="items-top doc-list pl10 pr10 clearfix">
+                                    <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                    <div class="dec">
+                                        <div class="clearfix">
+                                            <span class="f17 pr5 h1-black">王会永</span>
+                                            <span class="f13 gray"> 院长</span>
+                                            <i class="iconfont icon-rz fr pt2 orange"></i>
+                                        </div>
+                                        <p class="f15">
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <span class="orange">5.0</span>
+                                        </p>
+                                        <p class="ellipsis gray f15">医院：上海喜美医疗美容</p>
+                                        <p class="ellipsis gray f15">擅长：眼部、鼻部、胸部、皮肤</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="items-bottom doc-list f15 pl10 pr10 clearfix">
+                                <span class="fl pt10 pb10">已有<b class="red">150</b>预定</span>
+                                <a href="javascript:" class="pt10 pb10 gray fr">
+                                    <i class="iconfont icon-comment v-2"></i>
+                                    评论(289)
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 医院 -->
+                <div class="list-cont none">
+                    <ul>
+                        <li class="relative border-href-b">
+                            <a href="#" class="block pt10 pb10">
+                                <div class="items-top doc-list pl10 pr10 clearfix">
+                                    <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                    <div class="dec">
+                                        <div class="clearfix">
+                                            <h2 class="f17 pr5 h1-black ellipsis fl">上海喜美医疗美容</h2>
+                                            <i class="iconfont icon-rz fr pt2 orange"></i>
+                                        </div>
+                                        <p class="f15">
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <span class="orange">5.0</span>
+                                        </p>
+                                        <p class="gray f15">性质：私营</p>
+                                        <p class="ellipsis gray f15">地址：上海市徐家汇潮汐路88号</p>
+                                        <p class="ellipsis gray f15">擅长：眼部、鼻部、胸部、皮肤</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="items-bottom doc-list f15 pl10 pr10 clearfix">
+                                <span class="fl pt10 pb10">已有<b class="red">150</b>预定</span>
+                                <a href="javascript:" class="pt10 pb10 gray fr">
+                                    <i class="iconfont icon-comment v-2"></i>
+                                    评论(289)
+                                </a>
+                            </div>
+                        </li>
+                        <li class="relative border-href-b">
+                            <a href="#" class="block pt10 pb10">
+                                <div class="items-top doc-list pl10 pr10 clearfix">
+                                    <span class="img"><img src="images/list_img02.png" alt=""></span>
+                                    <div class="dec">
+                                        <div class="clearfix">
+                                            <h2 class="f17 pr5 h1-black ellipsis fl">上海喜美医疗美容</h2>
+                                            <i class="iconfont icon-rz fr pt2 orange"></i>
+                                        </div>
+                                        <p class="f15">
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <i class="iconfont icon-star orange"></i>
+                                            <span class="orange">5.0</span>
+                                        </p>
+                                        <p class="gray f15">性质：私营</p>
+                                        <p class="ellipsis gray f15">地址：上海市徐家汇潮汐路88号</p>
+                                        <p class="ellipsis gray f15">擅长：眼部、鼻部、胸部、皮肤</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="items-bottom doc-list f15 pl10 pr10 clearfix">
+                                <span class="fl pt10 pb10">已有<b class="red">150</b>预定</span>
+                                <a href="javascript:" class="pt10 pb10 gray fr">
+                                    <i class="iconfont icon-comment v-2"></i>
+                                    评论(289)
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="lib/plugins/jquery-2.1.4.js"></script>
+<script src="lib/plugins/fastclick.js"></script>
+
+<script>
+    $(function() {
+      FastClick.attach(document.body);
+    });
+</script>
+<script src="lib/plugins/iconfont.js"></script>
+<script src="lib/plugins/jquery-weui.js"></script>
+<script src="lib/plugins/swiper-3.4.2.jquery.min.js"></script>    <!-- banner -->
+<script src="lib/plugins/jquery.downCount.js"></script>     <!-- 倒计时 -->
+<!-- <script src="lib/plugins/echo.min.js"></script>  -->   <!-- pic懒加载 -->
+<script src="lib/script.js"></script>
+<script>
+    $(window).on('scroll', function(){
+        var header = $('.j-header'),
+            bannerH = $('.j-banner').height(),
+            scrollT = $(window).scrollTop(),
+            $opacity = scrollT / bannerH;
+        //console.log($opacity);
+        if(scrollT <= bannerH){
+            header.css('background', 'rgba(255,255,255,'+ $opacity +')');
+            header.find('.search').css('background', '#fff');
+            header.find('.place').addClass('white');
+            header.find('.news').addClass('white');
+        }else{
+            header.css('background', 'rgba(255,255,255, 1)');
+            header.find('.search').css('background', '#f2f2f2');
+            header.find('.place').removeClass('white');
+            header.find('.news').removeClass('white');
+
+        }
+    });
+</script>
+</html>

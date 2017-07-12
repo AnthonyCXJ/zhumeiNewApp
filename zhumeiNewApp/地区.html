@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地区定位</title>
+    <link rel="stylesheet" href="style/weui.css">    <!--  weui -->
+    <link rel="stylesheet" href="style/jquery-weui.css">    <!--  jquery-weui -->
+    <link rel="stylesheet" href="style/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="style/base.css">    <!--  base -->
+    <link rel="stylesheet" href="style/iconfont.css">
+    <link rel="stylesheet" href="style/style.css">    <!-- main style -->
+    <script src="lib/plugins/fontSize.js"></script>   <!--  rem字体 -->
+</head>
+<body>
+    <!-- 下拉刷新 -->
+    <div class="weui-pull-to-refresh__layer f15">
+        <div class='weui-pull-to-refresh__arrow'></div>
+        <div class='weui-pull-to-refresh__preloader'></div>
+        <div class="down">下拉刷新</div>
+        <div class="up">释放刷新</div>
+        <div class="refresh">正在刷新</div>
+    </div>
+    <!--头部-->
+    <header class="white-bg">
+        <a href="index_.html" class="place pl10 pr10 red fb"><i class="iconfont icon-close"></i></a>
+        <h2 class="tc h1-black lh45 f18">当前所选--上海</h2>
+    </header>
+
+    <div class="content gray-bg-f2 pt10 js-cont">
+        <!--定位-->
+        <div class="relative white-bg border-href-b pt10 pb10 pl10 gray">自动定位：<span class="h2-black">上海</span></div>
+        <div class="white-bg pt10 pb10 pl10 h1-black">全国</div>
+        <!--热门城市-->
+        <div class="hot-city relative border-href-b">
+            <h2>热门城市</h2>
+            <ul class="clearfix">
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">北京</a></li>
+            </ul>
+        </div>
+        <!--city list-->
+        <div class="all-city white-bg">
+            <div class="city-list-wrap">
+                <div class="city-list">
+                    <p id="A">A</p>
+                    <div>
+                        <a href="##">鞍山</a>
+                        <a href="##">安庆</a>
+                    </div>
+                </div>
+                <div class="city-list">
+                    <p id="B">B</p>
+                    <div>
+                        <a href="##">北京</a>
+                        <a href="##">北京</a>
+                        <a href="##">北京</a>
+                        <a href="##">北京</a>
+                        <a href="##">北京</a>
+                    </div>
+                </div>
+                <div class="city-list">
+                    <p>S</p>
+                    <div>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                        <a href="##">上海</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-letters">
+                <ul>
+                    <li><a href="#A">A</a></li>
+                    <li><a href="#B">B</a></li>
+                    <li><a href="#C">C</a></li>
+                    <li><a href="#D">D</a></li>
+                    <li><a href="#E">E</a></li>
+                    <li><a href="#F">F</a></li>
+                    <li><a href="#G">G</a></li>
+                    <li><a href="#H">H</a></li>
+                    <li><a href="#I">I</a></li>
+                    <li><a href="#J">J</a></li>
+                    <li><a href="#K">K</a></li>
+                    <li><a href="#L">L</a></li>
+                    <li><a href="#M">M</a></li>
+                    <li><a href="#N">N</a></li>
+                    <li><a href="#O">O</a></li>
+                    <li><a href="#P">P</a></li>
+                    <li><a href="#Q">Q</a></li>
+                    <li><a href="#R">R</a></li>
+                    <li><a href="#S">S</a></li>
+                    <li><a href="#T">T</a></li>
+                    <li><a href="#U">U</a></li>
+                    <li><a href="#V">V</a></li>
+                    <li><a href="#W">W</a></li>
+                    <li><a href="#X">X</a></li>
+                    <li><a href="#Y">Y</a></li>
+                    <li><a href="#Z">Z</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="lib/plugins/jquery-2.1.4.js"></script>
+<script src="lib/plugins/fastclick.js"></script>
+
+<script>
+    $(function() {
+      FastClick.attach(document.body);
+    });
+</script>
+<script src="lib/plugins/iconfont.js"></script>
+<script src="lib/plugins/jquery-weui.js"></script>
+<script src="lib/plugins/swiper-3.4.2.jquery.min.js"></script>    <!-- banner -->
+<script src="lib/plugins/jquery.downCount.js"></script>     <!-- 倒计时 -->
+<script src="lib/script.js"></script>
+</html>

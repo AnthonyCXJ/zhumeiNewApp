@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>search</title>
+    <link rel="stylesheet" href="style/weui.css">    <!--  weui -->
+    <link rel="stylesheet" href="style/jquery-weui.css">    <!--  jquery-weui -->
+    <link rel="stylesheet" href="style/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="style/base.css">    <!--  base -->
+    <link rel="stylesheet" href="style/iconfont.css">
+    <link rel="stylesheet" href="style/style.css">    <!-- main style -->
+    <script src="lib/plugins/fontSize.js"></script>   <!--  rem字体 -->
+</head>
+<body ontouchstart class="gray-bg-f2">
+    <!-- 下拉刷新 -->
+    <div class="weui-pull-to-refresh__layer f15">
+        <div class='weui-pull-to-refresh__arrow'></div>
+        <div class='weui-pull-to-refresh__preloader'></div>
+        <div class="down">下拉刷新</div>
+        <div class="up">释放刷新</div>
+        <div class="refresh">正在刷新</div>
+    </div>
+    <!--头部-->
+    <header class="search-hd border-href-b">
+        <a href="index_.html" class="place pl10 pr10 f15"><i class="iconfont icon-left"></i>返回</a>
+        <form href="##" class="search-fm">
+            <label>
+                <i class="iconfont icon-search f15 gray"></i>
+                <input type="text" placeholder="搜索项目/商品/专家">
+            </label>
+            <button>搜索</button>
+        </form>
+    </header>
+
+    <!-- 内容 -->
+    <div class="content">
+        <div class="hot-city">
+            <h2>大家都在搜</h2>
+            <ul class="clearfix">
+                <li><a href="##">双眼皮</a></li>
+                <li><a href="##">隆胸</a></li>
+                <li><a href="##">隆鼻</a></li>
+                <li><a href="##">瘦脸术</a></li>
+                <li><a href="##">丰臀</a></li>
+                <li><a href="##">修眉</a></li>
+                <li><a href="##">毛发</a></li>
+                <li><a href="##">瘦小腿</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+<script src="lib/plugins/jquery-2.1.4.js"></script>
+<script src="lib/plugins/fastclick.js"></script>
+
+<script>
+    $(function() {
+      FastClick.attach(document.body);
+    });
+</script>
+<script src="lib/plugins/iconfont.js"></script>
+<script src="lib/plugins/jquery-weui.js"></script>
+<script src="lib/plugins/swiper-3.4.2.jquery.min.js"></script>    <!-- banner -->
+<script src="lib/plugins/jquery.downCount.js"></script>     <!-- 倒计时 -->
+<script src="lib/script.js"></script>
+</html>
